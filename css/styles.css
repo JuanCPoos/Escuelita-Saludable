@@ -1,0 +1,159 @@
+/* paleta */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f3ba2f;
+  color: #333333;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+header {
+  padding: 20px 0;
+  text-align: center;
+}
+header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+main #main-message {
+  text-align: center;
+  padding: 0 20px;
+}
+main #main-message .texto-portada {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+main #main-message .texto-portada h2 {
+  font-size: clamp(50px, 8.5vmin, 110px);
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  text-align: left;
+}
+main #main-message .texto-portada h2 span {
+  border-bottom: 0.5rem #fff solid;
+}
+main #main-message .texto-portada p {
+  margin: 2em 0;
+  text-align: left;
+}
+main #main-message .container-subscriopcion form input {
+  padding: 1em;
+}
+main #main-message .container-subscriopcion form button {
+  margin: 1em;
+}
+main #main-message p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+main #main-message #contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #main-message #contact-form input[type=email] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+main #main-message #contact-form button {
+  padding: 10px 20px;
+  background-color: #f3c139;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+main #main-message #contact-form button:hover {
+  color: #f3ba2f;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: all ease-in-out;
+}
+main #social-media {
+  padding: 50px 0;
+  text-align: center;
+}
+main #social-media h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+main #social-media .social-icons a {
+  margin: 0 10px;
+  color: #ffffff;
+  font-size: 2em;
+  transition: color 0.3s ease;
+}
+main #social-media .social-icons a:hover {
+  color: #f3ba2f;
+  padding: 0.3em;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: all ease-in-out;
+}
+
+footer {
+  background-color: #a6a6a6;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  bottom: 0px;
+}
+
+@media screen and (max-width: 797px) {
+  .texto-portada {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .texto-portada h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .texto-portada h2 span {
+    border-bottom: 0.5rem #fff solid;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .texto-portada {
+    padding: 3em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

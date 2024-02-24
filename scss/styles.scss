@@ -1,0 +1,194 @@
+/* paleta */
+$color-fondo: #f3ba2f;
+$color-fondo2: #c6c5ff;
+$color-gris: #a6a6a6;
+$color-texto: #fff;
+
+
+// Reset de estilos
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Estilos generales
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $color-fondo; // Color de fondo uniforme
+    color: #333333; // Color de texto    
+}
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+header {
+    padding: 20px 0;
+    text-align: center;
+
+    h1 {
+        font-size: 2rem;
+        color: #ffffff; // Color de texto del encabezado
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    #main-message {
+        text-align: center;
+        padding: 0 20px;
+
+        .texto-portada {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+
+            h2 {
+                font-size: clamp(50px, 8.5vmin, 110px);
+                margin-bottom: 20px;
+                color: $color-texto;
+                text-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+                font-weight: 800;
+                letter-spacing: -0.02em;
+                line-height: 1.3;
+                text-align: left;
+
+
+                span {
+
+                    border-bottom: .5rem #fff solid;
+                }
+            }
+
+            p {
+                margin: 2em 0;
+                text-align: left;
+            }
+        }
+
+        .container-subscriopcion {
+            form {
+                input {
+                    padding: 1em;
+                }
+
+                button {
+                    margin: 1em;
+                }
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input[type="email"] {
+                padding: 10px;
+                margin-bottom: 10px;
+                border: none;
+                border-radius: 5px;
+                width: 100%;
+                max-width: 300px;
+            }
+
+            button {
+                padding: 10px 20px;
+                background-color: #f3c139; // Color de fondo del botón
+                color: #ffffff; // Color de texto del botón
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    color: $color-fondo;                                        
+                    background-color: #fff;
+                    box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+                    transition: all ease-in-out;
+                }
+            }
+        }
+    }
+
+    #social-media {
+        padding: 50px 0;
+        text-align: center;
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ffffff; // Color de texto
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #ffffff; // Color de ícono de redes sociales
+            font-size: 2em;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $color-fondo;
+                padding: .3em;
+                border-radius: 50%;
+                background-color: #fff;
+                box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+                transition: all ease-in-out;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $color-gris; // Color de fondo del pie de página
+    color: $color-texto; // Color de texto del pie de página
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0px;
+
+}
+
+@media screen and (max-width: 797px) {
+
+    .texto-portada {
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: $color-texto;
+
+            span {
+
+                border-bottom: .5rem #fff solid;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .texto-portada {
+        padding: 3em;
+    }
+}
