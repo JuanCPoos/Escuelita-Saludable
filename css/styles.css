@@ -61,7 +61,7 @@ main #main-message .texto-portada h2 span {
 }
 main #main-message .texto-portada p {
   margin: 2em 0;
-  text-align: left;
+  display: inline;
 }
 main #main-message .container-subscriopcion form input {
   padding: 1em;
