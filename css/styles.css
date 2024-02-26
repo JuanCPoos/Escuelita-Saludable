@@ -25,6 +25,12 @@ header h1 {
   font-size: 2rem;
   color: #ffffff;
 }
+header i {
+  padding-top: 1em;
+  color: #a6a6a6;
+  font-size: 2.3em;
+  filter: drop-shadow(-2px 3px 4px rgba(0, 0, 0, 0.5));
+}
 
 main {
   display: flex;
@@ -43,7 +49,7 @@ main #main-message .texto-portada {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   text-align: left;
 }
 main #main-message .texto-portada h2 {
@@ -56,27 +62,29 @@ main #main-message .texto-portada h2 {
   line-height: 1.3;
   text-align: left;
 }
+main #main-message .texto-portada h2 .scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
 main #main-message .texto-portada h2 span {
   border-bottom: 0.5rem #fff solid;
 }
-main #main-message .texto-portada p {
+main #main-message .texto-portada h5 {
   margin: 2em 0;
   display: inline;
-}
-main #main-message .container-subscriopcion form input {
-  padding: 1em;
-}
-main #main-message .container-subscriopcion form button {
-  margin: 1em;
-}
-main #main-message p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-weight: 100;
+  font-size: 1em;
+  color: #fff;
+  max-width: fit-content;
+  background-color: #a6a6a6;
+  padding: 0.5em 1em;
+  border-radius: 10px;
 }
 main #main-message #contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2.4em;
 }
 main #main-message #contact-form input[type=email] {
   padding: 10px;
@@ -84,24 +92,29 @@ main #main-message #contact-form input[type=email] {
   border: none;
   border-radius: 5px;
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
 }
 main #main-message #contact-form button {
   padding: 10px 20px;
-  background-color: #f3c139;
-  color: #ffffff;
+  background-color: #b98e22;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 16px;
 }
 main #main-message #contact-form button:hover {
-  color: #f3ba2f;
-  background-color: #fff;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  padding: 12px 27px;
+  background-color: #a47e1d;
   transition: all ease-in-out;
 }
+main #main-message p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
 main #social-media {
+  margin: 1em 0em;
   padding: 50px 0;
   text-align: center;
 }
@@ -124,16 +137,52 @@ main #social-media .social-icons a:hover {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   transition: all ease-in-out;
 }
+main #carousel {
+  background-color: #fff;
+  box-shadow: -4px 8px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  margin-top: 3em;
+  padding: 3em 1em;
+}
+main #carousel .carousel {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: #b98e22;
+}
+main #edades {
+  width: 100%;
+  height: 100vh;
+  padding: 3em 1em;
+  background-color: #a6a6a6;
+  padding: 2em 1em;
+}
+main #edades .edades {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 
 footer {
+  margin: 5em 0em 0em 0em;
   background-color: #a6a6a6;
   color: #fff;
   padding: 20px 0;
   text-align: center;
-  bottom: 0px;
+  bottom: 0;
 }
 
 @media screen and (max-width: 797px) {
+  header {
+    padding-top: 3em;
+  }
   .texto-portada {
     max-width: 90%;
     margin: 0 auto;
@@ -152,7 +201,7 @@ footer {
 }
 @media screen and (max-width: 1350px) {
   .texto-portada {
-    padding: 3em;
+    padding: 2em;
   }
 }
 
