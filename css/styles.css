@@ -11,6 +11,13 @@ body {
   color: #333333;
 }
 
+h1, h3 {
+  padding: 1em 0em;
+}
+h1:hover, h3:hover {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
 header,
 main,
 footer {
@@ -20,10 +27,6 @@ footer {
 header {
   padding: 20px 0;
   text-align: center;
-}
-header h1 {
-  font-size: 2rem;
-  color: #ffffff;
 }
 header i {
   padding-top: 1em;
@@ -38,6 +41,9 @@ main {
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+main h3 {
+  font-size: 35px;
 }
 main #main-message {
   text-align: center;
@@ -158,7 +164,7 @@ main #edades {
   width: 100%;
   height: 100vh;
   padding: 3em 1em;
-  background-color: #a6a6a6;
+  background-color: #f3ba2f;
   padding: 2em 1em;
 }
 main #edades .edades {
@@ -169,7 +175,15 @@ main #edades .edades {
   align-items: center;
   margin: 0 auto;
 }
-
+main #ubicacion {
+  background-color: #fff;
+  padding: 2em;
+  width: 100%;
+  height: 100vh;
+}
+main #ubicacion .mapa {
+  width: 95%;
+}
 footer {
   margin: 5em 0em 0em 0em;
   background-color: #a6a6a6;
@@ -179,6 +193,17 @@ footer {
   bottom: 0;
 }
 
+@media screen and (max-width: 450px) {
+  main #ubicacion {
+    background-color: #fff;
+    padding: 2em;
+    width: 100%;
+    height: 100vh;
+  }
+  main #ubicacion .mapa {
+    width: 95%;
+  }
+}
 @media screen and (max-width: 797px) {
   header {
     padding-top: 3em;

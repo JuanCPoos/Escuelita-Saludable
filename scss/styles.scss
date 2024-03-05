@@ -19,6 +19,12 @@ body {
     background-color: $color-fondo; // Color de fondo uniforme
     color: #333333; // Color de texto    
 }
+h1, h3{
+    padding: 1em 0em;
+    &:hover{
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+    }
+}
 
 header,
 main,
@@ -29,11 +35,6 @@ footer {
 header {
     padding: 20px 0;
     text-align: center;
-
-    h1 {
-        font-size: 2rem;
-        color: #ffffff; // Color de texto del encabezado
-    }
 
     i {
         padding-top: 1em;
@@ -49,6 +50,10 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
+
+    h3{
+        font-size: 35px;
+    }
 
     #main-message {
         text-align: center;
@@ -190,7 +195,7 @@ main {
         width: 100%;
         height: 100vh;        
         padding: 3em 1em;
-        background-color: $color-gris;
+        background-color: $color-fondo;
         padding: 2em 1em;
         .edades{
             max-width: 1200px;
@@ -199,6 +204,18 @@ main {
             justify-content: center;
             align-items: center;
             margin: 0 auto;
+        }
+    }
+    #ubicacion{
+        background-color: #fff;
+        padding: 2em;
+        width: 100%;
+        height: 100vh;
+        .mapa{
+            width: 95%;
+            .mapa-google{
+
+            }
         }
     }
 }
@@ -212,6 +229,25 @@ footer {
     bottom: 0;
 
 }
+
+
+@media screen and (max-width: 450px) {
+    main{
+        #ubicacion{
+            background-color: #fff;
+            padding: 2em;
+            width: 100%;
+            height: 100vh;
+            .mapa{
+                width: 95%;
+                .mapa-google{
+                    
+                }
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 797px) {
     header {
